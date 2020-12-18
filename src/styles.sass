@@ -1,1 +1,345 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face 
+    font-family: "CircularBook"
+    src: url("/assets/fonts/Circular/CircularStd-Book.otf")
+
+$white: #FFFFFF
+
+body,
+html
+    width: 100%
+    height: 100vh
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    overflow: hidden
+    app-homepage
+        width: 100%
+        height: 100vh
+        overflow-x: hidden
+        overflow-y: scroll
+        webkit-overflow-scrolling: touch
+        scroll-behaviour: smooth
+        display: block
+        position: fixed
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: "CircularBook"
+    text-decoration: none
+    color: $white
+
+
+.container 
+    width: 90%
+    height: 100%
+    max-width: 1280px
+    margin: 0 auto
+    position: relative
+
+.column
+    float: left
+    display: block
+    &.col-3
+        width: 30%
+    &.col-5
+        width: 50%
+    &.col-7
+        width: 70%
+    &.col-10
+        width: 100%
+    &.col-2
+        width: 20%
+    
+
+section
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: space-between
+    position: relative
+    .section-header
+        display: block
+        padding: 100px 0 50px
+        div
+            //padding: 0 5%
+            h3 
+                font-size: 40px
+            p
+                width: 85%
+                margin: 30px 0 100px
+                border-top: solid 1px white
+                padding-top: 30px
+                font-size: 25px
+                &.m_left
+                    margin-left: 15%
+            span.number
+                font-size: 7vw  
+                border: 4px solid
+                border: solid 1vw
+                width: 12vw
+                height: 12vw
+                border-radius: 13vw
+                display: block
+                text-align: center
+                line-height: 10vw
+    
+    .section-carousel,
+    .section-dropdown
+        width: 100%
+        height: 65vh
+        position: relative
+        float: right
+        overflow: hidden
+
+    &.section-1
+        color: white
+        background: black  
+        height: auto !important
+        padding-bottom: 15vh
+        min-height: 100vh
+        span.number
+            border-color: white
+        
+    &.section-2
+        background: white
+        height: auto !important
+        padding-bottom: 15vh
+        min-height: 100vh
+        span.number
+            border-color: white
+        *
+            color: black
+    &.resume,
+    &.download
+        height: 65vh
+        overflow: hidden
+        background: black
+        img
+            min-width: 100%
+            min-height: 100%
+            width: auto
+            height: 100%
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate3d(-50%, -50%, 0)
+            transform-origin: 50% 50%
+            opacity: .6
+
+    
+        .download-content
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            text-align: center
+            width: 100%
+            h2
+                font-size: 3vw
+            a 
+                padding: 15px 25px
+                margin: 50px auto 0
+                display: block
+                width: 250px
+                border-radius: 40px
+                background: white
+                color: black
+                font-size: 1.5vw
+            
+        
+.intro
+    width: 100%
+    height: 100vh
+    background: #CF9DFE
+
+    .vert-text
+        left: 80vw
+        position: absolute
+        bottom: 0
+        display: block
+        font-weight: 300
+        line-height: 1em
+        color: hsla(0,0%,58.4%,.15)
+        white-space: nowrap
+        transform-origin: left bottom
+        transform: rotate(-90deg) translate(-50%,100%)
+        &__inner
+            font-size: 25vh
+            span
+                -webkit-text-stroke: 1px white
+                color: transparent
+                position: absolute
+                bottom: 5vw
+                left: 100px
+
+    .intro-text
+        position: absolute
+        bottom: 120px
+        z-index: 1
+
+        h1
+            font-size: 4vw
+            line-height: 5vw
+            z-index: 2
+            position: relative
+            
+    img
+        position: absolute
+        transform: translateY(-50%)
+        margin: 0 auto
+        left: 0 
+        right: 0
+        display: block
+
+        &.phone
+            top: 60%
+            z-index: 1
+            width: 70%
+            max-width: 700px
+
+        &.mimo_bg
+            top: 50%
+            z-index: 0
+            width: 60%
+            max-width: 600px
+
+    .down_arrow
+        position: absolute
+        bottom: 120px
+        right: 0
+
+    .intro-footer
+        width: 100%
+        height: 80px
+        position: absolute
+        bottom: 0
+        border-top: solid 1px $white
+        padding: 30px 0
+        display: flex
+        justify-content: space-between
+        z-index: 10
+
+.mat-expansion-panel .mat-expansion-panel-header.cdk-keyboard-focused:not([aria-disabled=true]), 
+.mat-expansion-panel .mat-expansion-panel-header.cdk-program-focused:not([aria-disabled=true]),
+.mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true])
+     background: transparent !important
+
+.mat-expansion-indicator
+  display: none !important
+
+mat-expansion-panel
+    border-bottom: solid 1px black
+    box-shadow: 0 0 transparent !important
+    border-radius: 0 !important
+    
+    mat-expansion-panel-header
+        padding: 20px 0 !important
+        height: auto !important
+        &:hover
+            background: transparent !important
+        &.mat-expanded
+            span.icon     
+                transform: translateY(-50%) rotate(270deg)
+                &::before
+                    width: 0
+        mat-panel-title
+            position: relative
+            margin-right: 0 !important
+            h3
+                font-size: 30px !important
+                line-height: 35px
+                width: 80%
+            span.icon        
+                width: 30px
+                height: 40px
+                position: absolute
+                right: 0        
+                top: 50%
+                transition: .5s ease
+                transform: translateY(-50%) rotate(0)
+                &::before,
+                &::after
+                   content: ''
+                   width: 100%
+                   height: 2px
+                   background: black 
+                   position: absolute
+                   top: 50%
+                   display: block
+                   transition: .5s ease
+                   transform-origin: 50% 50%
+                   left: 0
+                   right: 0
+                   margin: 0 auto
+                &::before
+                    transform: translateY(-50%)
+                &::after
+                    transform: translateY(-50%) rotate(90deg)
+    .mat-expansion-panel-body
+        padding: 0px 0 30px !important
+        p
+            font-size: 20px !important
+            line-height: 25px
+            margin: 0 !important
+            padding: 0 !important
+            width: 50% !important
+
+@media screen and ( max-width:  640px)
+    mat-expansion-panel .mat-expansion-panel-body p
+        width: 100% !important
+
+    .column
+        float: left
+        display: block
+        width: 100% !important
+    section 
+        .section-header 
+            padding: 50px 0
+            div 
+                p
+                    width: 90%
+                    margin: 30px 0 50px
+                p.m_left
+                    margin-left: 0
+                span.number
+                    font-size: 21vw
+                    width: 32vw
+                    height: 32vw
+                    border-radius: 43vw
+                    line-height: 28vw
+                    margin-bottom: 50px
+    
+        &.download 
+            .download-content 
+                h2
+                    font-size: 10vw
+                a 
+                    font-size: 20px
+
+    .intro 
+        img.mimo_bg
+            display: none
+        img.phone
+            top: 50%
+            transform: translateY(-50%) scale(1.5)
+            width: 100%
+        .intro-footer
+            height: 130px
+            display: grid
+        .down_arrow
+            bottom: 30px  
+        .intro-text
+            bottom: 155px  
+            h1
+                font-size: 11vw
+                line-height: 15vw
+        .vert-text__inner span
+            left: 150px
