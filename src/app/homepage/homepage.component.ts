@@ -15,7 +15,6 @@ export class HomepageComponent implements OnInit {
     this.scrollFunction()
   }
 
-  
 
   private scrollFunction(): void {
 

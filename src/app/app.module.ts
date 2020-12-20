@@ -25,10 +25,9 @@ import { FaqpageComponent } from './faqpage/faqpage.component';
     HeaderComponent,
     HomepageComponent,
     FooterComponent,
-    MobileMenuComponent,
     AboutpageComponent,
     FaqpageComponent,
-    
+    MobileMenuComponent,
   ],
   imports: [
     BrowserModule,
