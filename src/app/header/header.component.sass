@@ -5,7 +5,15 @@ header
     position: sticky
     z-index: 100
     background: linear-gradient(180deg, #AD6CEB 0%, #ad6ceb00 100%)
+    transition: .3s ease
+    transform: translateY(0)
     // background: #CF9DFE
+    &.hidden
+        transform: translateY(-100px)
+        @media screen and ( max-width:  640px)
+            transform: translateY(0px)
+    &.inview
+        background: linear-gradient(180deg, #000 0%, #0000 100%) 
     a.logo, nav
         position: absolute
         top: 50%

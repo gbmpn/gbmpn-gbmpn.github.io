@@ -22,7 +22,7 @@ html
         overflow-x: hidden
         overflow-y: scroll
         -webkit-overflow-scrolling: touch
-        scroll-behaviour: smooth
+        scroll-behavior: smooth
         display: block
         position: fixed
         top: 0
@@ -52,6 +52,7 @@ html
     z-index: 100
     display: block 
     transition: .3s ease
+    display: none
     nav, 
     a.logo,
     .intro-footer,
@@ -196,7 +197,6 @@ section
     width: 100%
     height: 100vh
     background: #CF9DFE
-
     .vert-text
         left: 80vw
         position: absolute
@@ -252,6 +252,10 @@ section
         position: absolute
         bottom: 120px
         right: 0
+        width: 50px
+        z-index: 100
+        svg 
+            width: 100%
 
     .intro-footer
         width: 100%
@@ -330,11 +334,11 @@ mat-expansion-panel
             width: 50% !important
 
 @media screen and ( max-width:  640px)
+    .app-mobile-menu
+        display: block
     mat-expansion-panel .mat-expansion-panel-body p
         width: 100% !important
         
-   
-
     .column
         float: left
         display: block
