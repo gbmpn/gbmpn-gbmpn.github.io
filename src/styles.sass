@@ -332,6 +332,8 @@ mat-expansion-panel
 @media screen and ( max-width:  640px)
     mat-expansion-panel .mat-expansion-panel-body p
         width: 100% !important
+        
+   
 
     .column
         float: left
@@ -341,11 +343,15 @@ mat-expansion-panel
         .section-header 
             padding: 50px 0
             div 
+                h3
+                    font-size: 30px !important
                 p
-                    width: 90%
-                    margin: 30px 0 50px
+                    width: 90% !important
+                    margin: 30px 0 10px !important
+                    font-size: 20px !important
                 p.m_left
-                    margin-left: 0
+                    margin-left: 0 !important
+                    margin-bottom: 50px !important
                 span.number
                     font-size: 21vw
                     width: 32vw
@@ -353,7 +359,24 @@ mat-expansion-panel
                     border-radius: 43vw
                     line-height: 28vw
                     margin-bottom: 50px
-    
+        &.section-2
+            .section-header
+                mat-expansion-panel 
+                    .mat-expansion-panel-header
+                        h3 
+                            font-size: 25px !important
+                            line-height: 30px   
+                    .mat-expansion-panel-body 
+                        padding: 0px 0 20px !important 
+                       
+                        p 
+                            width: 100% !important
+                            font-size: 20px !important
+                            line-height: 25px !important
+                            margin: 0px 0 10px !important
+                span.number
+                    margin-bottom: 20px !important
+                
         &.download 
             .download-content 
                 h2
