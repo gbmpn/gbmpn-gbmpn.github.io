@@ -15,12 +15,13 @@ html
     right: 0
     bottom: 0
     overflow: hidden
+    background: black
     app-homepage
         width: 100%
         height: 100vh
         overflow-x: hidden
         overflow-y: scroll
-        webkit-overflow-scrolling: touch
+        -webkit-overflow-scrolling: touch
         scroll-behaviour: smooth
         display: block
         position: fixed
@@ -28,6 +29,10 @@ html
         bottom: 0
         left: 0
         right: 0
+        transition: .3s ease
+        transform: scale(1)
+        &.off
+            transform: scale(.9)
 
 * 
     margin: 0
@@ -37,6 +42,38 @@ html
     text-decoration: none
     color: $white
 
+.app-mobile-menu
+    pointer-events: none
+    width: 100%
+    height: 100%
+    position: fixed
+    top: 0
+    right: 0
+    z-index: 100
+    display: block 
+    transition: .3s ease
+    nav, 
+    a.logo,
+    .intro-footer,
+    .skew_arrow
+        opacity: 0
+        pointer-events: none
+        transition: .3s ease
+        transform: scale(1.1)
+    &.open
+        opacity: 1
+        background: black
+        pointer-events: all
+        nav, 
+        a.logo,
+        .intro-footer,
+        .skew_arrow
+            transform: scale(1)
+            opacity: 1
+            visibility: visible
+            pointer-events: all
+    @media screen and ( max-width:  640px)
+        display: block
 
 .container 
     width: 90%
