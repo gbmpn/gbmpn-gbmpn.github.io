@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 // import {MaterialModule} from '@angular/material'
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
+import { AboutpageComponent } from './aboutpage/aboutpage.component';
+import { FaqpageComponent } from './faqpage/faqpage.component';
+
+
 
 @NgModule({
   declarations: [
@@ -21,6 +26,8 @@ import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
     HomepageComponent,
     FooterComponent,
     MobileMenuComponent,
+    AboutpageComponent,
+    FaqpageComponent,
     
   ],
   imports: [
@@ -29,7 +36,13 @@ import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
     BrowserAnimationsModule,
     MatSliderModule,
     MatExpansionModule,
-    MatSidenavModule
+    MatSidenavModule,
+    RouterModule.forRoot([
+      {path: 'home', component: HomepageComponent},
+      {path: 'about', component: AboutpageComponent},
+      {path: 'faq', component: FaqpageComponent},
+      {path: '', redirectTo: '/home', pathMatch: 'full'},
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,23 +10,14 @@ export class HomepageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.mobileMenu()
+    document.body.classList.remove('aboutpage')
+    
     this.scrollFunction()
   }
 
-  mobileMenu(): void {
-    const mobileMenuTrigger = document.querySelector('.menu-trigger');
-    const mobileMenu = document.querySelector('app-mobile-menu');
-    const appHome = document.querySelector('app-homepage');
+  
 
-    mobileMenuTrigger.addEventListener('click', function() { 
-      this.classList.toggle('close')
-      appHome.classList.toggle('off')
-      mobileMenu.classList.toggle('open')
-    })
-  }
-
-  scrollFunction(): void {
+  private scrollFunction(): void {
 
     const appHome = document.querySelector('app-homepage');
     const header = document.querySelector('header')
@@ -34,7 +25,11 @@ export class HomepageComponent implements OnInit {
 
     appHome.addEventListener("scroll", function(){ 
       var st = this.scrollTop;
-      console.log(st, window.innerHeight)
+      if (appHome.scrollHeight - appHome.scrollTop === appHome.clientHeight){
+        header.classList.add('hidden')
+      }else {
+        header.classList.remove('hidden')
+      }
       if (st > window.innerHeight) {
         header.classList.add('inview')
       }else {

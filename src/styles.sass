@@ -16,7 +16,9 @@ html
     bottom: 0
     overflow: hidden
     background: black
-    app-homepage
+    app-homepage,
+    app-aboutpage,
+    app-faqpage
         width: 100%
         height: 100vh
         overflow-x: hidden
@@ -41,6 +43,10 @@ html
     font-family: "CircularBook"
     text-decoration: none
     color: $white
+    
+.aboutpage
+    header
+        background: linear-gradient(180deg, #000 0%, #0000 100%) !important
 
 .app-mobile-menu
     pointer-events: none
@@ -142,8 +148,8 @@ section
         color: white
         background: black  
         height: auto !important
-        padding-bottom: 15vh
-        min-height: 100vh
+        padding-bottom: 150px
+        min-height: auto
         span.number
             border-color: white
         
@@ -158,10 +164,10 @@ section
             color: black
     &.resume,
     &.download
-        height: 65vh
+        height: auto
         overflow: hidden
         background: black
-        img
+        img.bg
             min-width: 100%
             min-height: 100%
             width: auto
@@ -171,13 +177,11 @@ section
             top: 50%
             transform: translate3d(-50%, -50%, 0)
             transform-origin: 50% 50%
-            opacity: .6
-
+            opacity: .2
     
         .download-content
-            position: absolute
-            top: 50%
-            transform: translateY(-50%)
+            position: relative
+            margin: 100px auto
             text-align: center
             width: 100%
             h2
@@ -188,15 +192,27 @@ section
                 display: block
                 width: 250px
                 border-radius: 40px
-                background: white
-                color: black
+                color: white
                 font-size: 1.5vw
+                background: linear-gradient(356.81deg, #8371F0 6.08%, #AD6CEB 94.62%)
+            img.vault
+                width: 80%
+                max-width: 800px
+                margin: 50px auto
+                display: block
+    &.resume
+        min-height: 55vh
+        img.bg
+            opacity: .8
+   
+    
             
-        
 .intro
     width: 100%
     height: 100vh
     background: #CF9DFE
+    background: linear-gradient(356.81deg, #8371F0 6.08%, #AD6CEB 94.62%)
+
     .vert-text
         left: 80vw
         position: absolute
@@ -220,7 +236,7 @@ section
     .intro-text
         position: absolute
         bottom: 120px
-        z-index: 1
+        z-index: 20
 
         h1
             font-size: 4vw
@@ -235,18 +251,25 @@ section
         left: 0 
         right: 0
         display: block
-
         &.phone
-            top: 60%
+            top: 65%
             z-index: 1
-            width: 70%
-            max-width: 700px
-
+            width: 90%
+            max-width: 1200px
+    svg
         &.mimo_bg
-            top: 50%
+            position: absolute
+            top: 40%
+            transform: translateY(-50%)
+            margin: 0 auto
+            left: 0 
+            right: 0
+            display: block
             z-index: 0
             width: 60%
             max-width: 600px
+            path 
+                fill: rgba(255, 255, 255, 0.1)
 
     .down_arrow
         position: absolute
