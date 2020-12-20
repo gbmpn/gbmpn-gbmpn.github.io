@@ -797,9 +797,9 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         _header_header_component__WEBPACK_IMPORTED_MODULE_5__["HeaderComponent"],
         _homepage_homepage_component__WEBPACK_IMPORTED_MODULE_6__["HomepageComponent"],
         _footer_footer_component__WEBPACK_IMPORTED_MODULE_7__["FooterComponent"],
-        _mobile_menu_mobile_menu_component__WEBPACK_IMPORTED_MODULE_12__["MobileMenuComponent"],
         _aboutpage_aboutpage_component__WEBPACK_IMPORTED_MODULE_13__["AboutpageComponent"],
-        _faqpage_faqpage_component__WEBPACK_IMPORTED_MODULE_14__["FaqpageComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _faqpage_faqpage_component__WEBPACK_IMPORTED_MODULE_14__["FaqpageComponent"],
+        _mobile_menu_mobile_menu_component__WEBPACK_IMPORTED_MODULE_12__["MobileMenuComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
         _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
         _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_8__["BrowserAnimationsModule"],
         _angular_material_slider__WEBPACK_IMPORTED_MODULE_9__["MatSliderModule"],
@@ -813,9 +813,9 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _header_header_component__WEBPACK_IMPORTED_MODULE_5__["HeaderComponent"],
                     _homepage_homepage_component__WEBPACK_IMPORTED_MODULE_6__["HomepageComponent"],
                     _footer_footer_component__WEBPACK_IMPORTED_MODULE_7__["FooterComponent"],
-                    _mobile_menu_mobile_menu_component__WEBPACK_IMPORTED_MODULE_12__["MobileMenuComponent"],
                     _aboutpage_aboutpage_component__WEBPACK_IMPORTED_MODULE_13__["AboutpageComponent"],
                     _faqpage_faqpage_component__WEBPACK_IMPORTED_MODULE_14__["FaqpageComponent"],
+                    _mobile_menu_mobile_menu_component__WEBPACK_IMPORTED_MODULE_12__["MobileMenuComponent"],
                 ],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -860,7 +860,7 @@ class HeaderComponent {
     }
 }
 HeaderComponent.ɵfac = function HeaderComponent_Factory(t) { return new (t || HeaderComponent)(); };
-HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HeaderComponent, selectors: [["app-header"]], decls: 17, vars: 0, consts: [[1, "container"], ["href", "", 1, "logo"], ["src", "./assets/img/logo.svg", "alt", ""], ["routerLink", "/home", "routerLinkActive", "activebutton", 1, "nav-item"], ["href", "", 1, "nav-item"], ["routerLink", "/faq", "routerLinkActive", "activebutton", 1, "nav-item"], ["routerLink", "/about", "routerLinkActive", "activebutton", 1, "nav-item"], ["href", "", 1, "cta-item"]], template: function HeaderComponent_Template(rf, ctx) { if (rf & 1) {
+HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HeaderComponent, selectors: [["app-header"]], decls: 13, vars: 0, consts: [[1, "container"], ["href", "", 1, "logo"], ["src", "./assets/img/logo.svg", "alt", ""], ["routerLink", "/home", "routerLinkActive", "activebutton", 1, "nav-item"], ["routerLink", "/faq", "routerLinkActive", "activebutton", 1, "nav-item"], ["routerLink", "/about", "routerLinkActive", "activebutton", 1, "nav-item"], ["href", "", 1, "cta-item"]], template: function HeaderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "header");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "a", 1);
@@ -871,19 +871,13 @@ HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Home");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "a", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Borrow");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "FAQs");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "a", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Earn");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "a", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "About");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "a", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "FAQs");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "a", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "About");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "a", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "Get started");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "a", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Get started");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
