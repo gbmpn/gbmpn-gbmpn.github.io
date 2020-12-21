@@ -43,6 +43,14 @@ html
     font-family: "CircularBook"
     text-decoration: none
     color: $white
+
+a,
+mat-expansion-panel
+    *
+        transition: .3s ease
+    &:hover 
+        cursor: pointer 
+        opacity: .7
     
 .aboutpage
     header
@@ -139,10 +147,14 @@ section
     .section-carousel,
     .section-dropdown
         width: 100%
-        height: 65vh
+        height: auto
         position: relative
         float: right
         overflow: hidden
+
+    .section-carousel
+        img
+            width: 100%
 
     &.section-1
         color: white
@@ -157,7 +169,7 @@ section
         background: white
         height: auto !important
         padding-bottom: 15vh
-        min-height: 100vh
+        //min-height: 100vh
         span.number
             border-color: white
         *
@@ -224,6 +236,10 @@ section
         white-space: nowrap
         transform-origin: left bottom
         transform: rotate(-90deg) translate(-50%,100%)
+        @media screen and ( min-width:  1530px)
+            left: 65vw
+        @media screen and ( max-width:  768px)
+            left: 75vw
         &__inner
             font-size: 25vh
             span
@@ -252,7 +268,7 @@ section
         right: 0
         display: block
         &.phone
-            top: 65%
+            top: 50%
             z-index: 1
             width: 90%
             max-width: 1200px
