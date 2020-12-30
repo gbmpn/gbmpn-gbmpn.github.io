@@ -1053,7 +1053,7 @@ class HomepageComponent {
             document.querySelector('app-homepage').classList.remove('off');
         }, 200);
         this.scrollFunction();
-        //this.scrollAnim()
+        // this.scrollAnim()
     }
     ngOnDestroy() {
         document.querySelector('app-homepage').classList.add('off');
