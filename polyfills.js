@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/gbm/Sites/___CURRENT/mimo/src/polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! /Users/gbm/Sites/___CURRENT/mimo-home-web/src/polyfills.ts */"hN/g");
 
 
 /***/ }),
