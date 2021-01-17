@@ -19,15 +19,14 @@ class BorrowpageComponent {
     constructor() { }
     ngOnInit() {
         document.querySelector('header').classList.remove('hidden');
-        document.querySelector('app-borrowpage').classList.add('off');
-        setTimeout(() => {
-            document.querySelector('app-borrowpage').classList.remove('off');
-        }, 1);
+        const ww = window.innerWidth;
+        if (ww >= 1024) {
+            document.querySelector('app-borrowpage').classList.add('off');
+            setTimeout(() => {
+                document.querySelector('app-borrowpage').classList.remove('off');
+            }, 1);
+        }
         this.scrollFunction();
-        const mobileMenuTrigger = document.querySelector('.menu-trigger');
-        const mobileMenu = document.querySelector('app-mobile-menu');
-        mobileMenu.classList.remove('open');
-        mobileMenuTrigger.classList.remove('close');
     }
     scrollFunction() {
         const appAbout = document.querySelector('app-borrowpage');
@@ -323,15 +322,14 @@ class AboutpageComponent {
     constructor() { }
     ngOnInit() {
         document.querySelector('header').classList.remove('hidden');
-        document.querySelector('app-aboutpage').classList.add('off');
-        setTimeout(() => {
-            document.querySelector('app-aboutpage').classList.remove('off');
-        }, 1);
+        const ww = window.innerWidth;
+        if (ww >= 1024) {
+            document.querySelector('app-aboutpage').classList.add('off');
+            setTimeout(() => {
+                document.querySelector('app-aboutpage').classList.remove('off');
+            }, 1);
+        }
         this.scrollFunction();
-        const mobileMenuTrigger = document.querySelector('.menu-trigger');
-        const mobileMenu = document.querySelector('app-mobile-menu');
-        mobileMenu.classList.remove('open');
-        mobileMenuTrigger.classList.remove('close');
     }
     scrollFunction() {
         const appAbout = document.querySelector('app-aboutpage');
@@ -475,15 +473,14 @@ class EarnpageComponent {
     constructor() { }
     ngOnInit() {
         document.querySelector('header').classList.remove('hidden');
-        document.querySelector('app-earnpage').classList.add('off');
-        setTimeout(() => {
-            document.querySelector('app-earnpage').classList.remove('off');
-        }, 1);
+        const ww = window.innerWidth;
+        if (ww >= 1024) {
+            document.querySelector('app-earnpage').classList.add('off');
+            setTimeout(() => {
+                document.querySelector('app-earnpage').classList.remove('off');
+            }, 1);
+        }
         this.scrollFunction();
-        const mobileMenuTrigger = document.querySelector('.menu-trigger');
-        const mobileMenu = document.querySelector('app-mobile-menu');
-        mobileMenu.classList.remove('open');
-        mobileMenuTrigger.classList.remove('close');
     }
     scrollFunction() {
         const appAbout = document.querySelector('app-earnpage');
@@ -767,15 +764,14 @@ class FaqpageComponent {
     constructor() { }
     ngOnInit() {
         document.querySelector('header').classList.remove('hidden');
-        document.querySelector('app-faqpage').classList.add('off');
-        setTimeout(() => {
-            document.querySelector('app-faqpage').classList.remove('off');
-        }, 1);
+        const ww = window.innerWidth;
+        if (ww >= 1024) {
+            document.querySelector('app-faqpage').classList.add('off');
+            setTimeout(() => {
+                document.querySelector('app-faqpage').classList.remove('off');
+            }, 1);
+        }
         this.scrollFunction();
-        const mobileMenuTrigger = document.querySelector('.menu-trigger');
-        const mobileMenu = document.querySelector('app-mobile-menu');
-        mobileMenu.classList.remove('open');
-        mobileMenuTrigger.classList.remove('close');
     }
     scrollFunction() {
         const appHome = document.querySelector('app-faqpage');
@@ -1174,11 +1170,13 @@ class ErrorpageComponent {
     constructor() { }
     ngOnInit() {
         document.querySelector('header').classList.remove('hidden');
-        document.querySelector('app-aboutpage').classList.add('off');
-        setTimeout(() => {
-            document.querySelector('app-aboutpage').classList.remove('off');
-        }, 1);
-        //this.scrollFunction()
+        const ww = window.innerWidth;
+        if (ww >= 1024) {
+            document.querySelector('app-errorpage').classList.add('off');
+            setTimeout(() => {
+                document.querySelector('app-errorpage').classList.remove('off');
+            }, 1);
+        }
     }
 }
 ErrorpageComponent.ɵfac = function ErrorpageComponent_Factory(t) { return new (t || ErrorpageComponent)(); };
@@ -1379,15 +1377,14 @@ class HomepageComponent {
     }
     ngOnInit() {
         document.querySelector('header').classList.remove('hidden');
-        document.querySelector('app-homepage').classList.add('off');
-        setTimeout(() => {
-            document.querySelector('app-homepage').classList.remove('off');
-        }, 1);
+        const ww = window.innerWidth;
+        if (ww >= 1024) {
+            document.querySelector('app-homepage').classList.add('off');
+            setTimeout(() => {
+                document.querySelector('app-homepage').classList.remove('off');
+            }, 1);
+        }
         this.scrollFunction();
-        const mobileMenuTrigger = document.querySelector('.menu-trigger');
-        const mobileMenu = document.querySelector('app-mobile-menu');
-        mobileMenu.classList.remove('open');
-        mobileMenuTrigger.classList.remove('close');
     }
     scrollFunction() {
         const appHome = document.querySelector('app-homepage');
@@ -1667,12 +1664,12 @@ class AppComponent {
         const mobileMenu = document.querySelector('app-mobile-menu');
         const pageContainer = document.querySelector('.page-container');
         const mobileLinks = document.querySelectorAll('.mobile-menu-container nav a');
-        // mobileLinks.forEach(function(els){
-        //   els.addEventListener('click', function(){
-        //     mobileMenu.classList.remove('open')
-        //     mobileMenuTrigger.classList.remove('close')
-        //   })
-        // })
+        mobileLinks.forEach(function (els) {
+            els.addEventListener('click', function () {
+                mobileMenu.classList.remove('open');
+                mobileMenuTrigger.classList.remove('close');
+            });
+        });
         mobileMenuTrigger.addEventListener('click', function () {
             this.classList.toggle('close');
             pageContainer.classList.toggle('off');
