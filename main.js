@@ -24,6 +24,10 @@ class BorrowpageComponent {
             document.querySelector('app-borrowpage').classList.remove('off');
         }, 1);
         this.scrollFunction();
+        const mobileMenuTrigger = document.querySelector('.menu-trigger');
+        const mobileMenu = document.querySelector('app-mobile-menu');
+        mobileMenu.classList.remove('open');
+        mobileMenuTrigger.classList.remove('close');
     }
     scrollFunction() {
         const appAbout = document.querySelector('app-borrowpage');
@@ -324,6 +328,10 @@ class AboutpageComponent {
             document.querySelector('app-aboutpage').classList.remove('off');
         }, 1);
         this.scrollFunction();
+        const mobileMenuTrigger = document.querySelector('.menu-trigger');
+        const mobileMenu = document.querySelector('app-mobile-menu');
+        mobileMenu.classList.remove('open');
+        mobileMenuTrigger.classList.remove('close');
     }
     scrollFunction() {
         const appAbout = document.querySelector('app-aboutpage');
@@ -472,6 +480,10 @@ class EarnpageComponent {
             document.querySelector('app-earnpage').classList.remove('off');
         }, 1);
         this.scrollFunction();
+        const mobileMenuTrigger = document.querySelector('.menu-trigger');
+        const mobileMenu = document.querySelector('app-mobile-menu');
+        mobileMenu.classList.remove('open');
+        mobileMenuTrigger.classList.remove('close');
     }
     scrollFunction() {
         const appAbout = document.querySelector('app-earnpage');
@@ -760,6 +772,10 @@ class FaqpageComponent {
             document.querySelector('app-faqpage').classList.remove('off');
         }, 1);
         this.scrollFunction();
+        const mobileMenuTrigger = document.querySelector('.menu-trigger');
+        const mobileMenu = document.querySelector('app-mobile-menu');
+        mobileMenu.classList.remove('open');
+        mobileMenuTrigger.classList.remove('close');
     }
     scrollFunction() {
         const appHome = document.querySelector('app-faqpage');
@@ -1368,11 +1384,16 @@ class HomepageComponent {
             document.querySelector('app-homepage').classList.remove('off');
         }, 1);
         this.scrollFunction();
+        const mobileMenuTrigger = document.querySelector('.menu-trigger');
+        const mobileMenu = document.querySelector('app-mobile-menu');
+        mobileMenu.classList.remove('open');
+        mobileMenuTrigger.classList.remove('close');
     }
     scrollFunction() {
         const appHome = document.querySelector('app-homepage');
         const header = document.querySelector('header');
         const tofade = document.querySelectorAll('.tofade');
+        const main_bg = document.querySelectorAll('.main_bg');
         let lastScrollTop = 0;
         appHome.addEventListener("scroll", function () {
             let st = this.scrollTop;
@@ -1646,12 +1667,12 @@ class AppComponent {
         const mobileMenu = document.querySelector('app-mobile-menu');
         const pageContainer = document.querySelector('.page-container');
         const mobileLinks = document.querySelectorAll('.mobile-menu-container nav a');
-        mobileLinks.forEach(function (els) {
-            els.addEventListener('click', function () {
-                mobileMenu.classList.remove('open');
-                mobileMenuTrigger.classList.remove('close');
-            });
-        });
+        // mobileLinks.forEach(function(els){
+        //   els.addEventListener('click', function(){
+        //     mobileMenu.classList.remove('open')
+        //     mobileMenuTrigger.classList.remove('close')
+        //   })
+        // })
         mobileMenuTrigger.addEventListener('click', function () {
             this.classList.toggle('close');
             pageContainer.classList.toggle('off');
