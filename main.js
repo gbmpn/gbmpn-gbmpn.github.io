@@ -1696,7 +1696,12 @@ class AppComponent {
         this.mobileMenu();
     }
     prepareRoute(outlet) {
-        return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
+        if (window.navigator.userAgent.match(/iPad/i) || window.navigator.userAgent.match(/iPhone/i)) {
+            return false;
+        }
+        else {
+            return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
+        }
     }
     mobileMenu() {
         const mobileMenuTrigger = document.querySelector('.menu-trigger');
