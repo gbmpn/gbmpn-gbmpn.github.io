@@ -20,12 +20,12 @@ class BorrowpageComponent {
     ngOnInit() {
         document.querySelector('header').classList.remove('hidden');
         const ww = window.innerWidth;
-        if (ww >= 1024) {
-            document.querySelector('app-borrowpage').classList.add('off');
-            setTimeout(() => {
-                document.querySelector('app-borrowpage').classList.remove('off');
-            }, 1);
-        }
+        // if(ww >= 1024) {
+        //   document.querySelector('app-borrowpage').classList.add('off')
+        //   setTimeout(() => {
+        //     document.querySelector('app-borrowpage').classList.remove('off')
+        //   }, 1)
+        // }
         this.scrollFunction();
     }
     scrollFunction() {
@@ -333,12 +333,12 @@ class AboutpageComponent {
     ngOnInit() {
         document.querySelector('header').classList.remove('hidden');
         const ww = window.innerWidth;
-        if (ww >= 1024) {
-            document.querySelector('app-aboutpage').classList.add('off');
-            setTimeout(() => {
-                document.querySelector('app-aboutpage').classList.remove('off');
-            }, 1);
-        }
+        // if(ww >= 1024) {
+        //   document.querySelector('app-aboutpage').classList.add('off')
+        //   setTimeout(() => {
+        //     document.querySelector('app-aboutpage').classList.remove('off')
+        //   }, 1)
+        // }
         this.scrollFunction();
     }
     scrollFunction() {
@@ -490,12 +490,12 @@ class EarnpageComponent {
     ngOnInit() {
         document.querySelector('header').classList.remove('hidden');
         const ww = window.innerWidth;
-        if (ww >= 1024) {
-            document.querySelector('app-earnpage').classList.add('off');
-            setTimeout(() => {
-                document.querySelector('app-earnpage').classList.remove('off');
-            }, 1);
-        }
+        // if(ww >= 1024) {
+        //   document.querySelector('app-earnpage').classList.add('off')
+        //   setTimeout(() => {
+        //     document.querySelector('app-earnpage').classList.remove('off')
+        //   }, 1)
+        // }
         this.scrollFunction();
     }
     scrollFunction() {
@@ -791,12 +791,12 @@ class FaqpageComponent {
     ngOnInit() {
         document.querySelector('header').classList.remove('hidden');
         const ww = window.innerWidth;
-        if (ww >= 1024) {
-            document.querySelector('app-faqpage').classList.add('off');
-            setTimeout(() => {
-                document.querySelector('app-faqpage').classList.remove('off');
-            }, 1);
-        }
+        // if(ww >= 1024) {
+        //   document.querySelector('app-faqpage').classList.add('off')
+        //   setTimeout(() => {
+        //     document.querySelector('app-faqpage').classList.remove('off')
+        //   }, 1)
+        // }
         this.scrollFunction();
     }
     scrollFunction() {
@@ -1163,12 +1163,12 @@ class ErrorpageComponent {
     ngOnInit() {
         document.querySelector('header').classList.remove('hidden');
         const ww = window.innerWidth;
-        if (ww >= 1024) {
-            document.querySelector('app-errorpage').classList.add('off');
-            setTimeout(() => {
-                document.querySelector('app-errorpage').classList.remove('off');
-            }, 1);
-        }
+        // if(ww >= 1024) {
+        //   document.querySelector('app-errorpage').classList.add('off')
+        //   setTimeout(() => {
+        //     document.querySelector('app-errorpage').classList.remove('off')
+        //   }, 1)
+        // }
     }
 }
 ErrorpageComponent.ɵfac = function ErrorpageComponent_Factory(t) { return new (t || ErrorpageComponent)(); };
@@ -1368,12 +1368,12 @@ class HomepageComponent {
     ngOnInit() {
         document.querySelector('header').classList.remove('hidden');
         const ww = window.innerWidth;
-        if (ww >= 1024) {
-            document.querySelector('app-homepage').classList.add('off');
-            setTimeout(() => {
-                document.querySelector('app-homepage').classList.remove('off');
-            }, 1);
-        }
+        // if(ww >= 1024) {
+        //   document.querySelector('app-homepage').classList.add('off')
+        //   setTimeout(() => {
+        //     document.querySelector('app-homepage').classList.remove('off')
+        //   }, 1)
+        // }
         this.scrollFunction();
     }
     scrollFunction() {
