@@ -20,12 +20,10 @@ class BorrowpageComponent {
     ngOnInit() {
         document.querySelector('header').classList.remove('hidden');
         const ww = window.innerWidth;
-        if (ww >= 1024) {
-            document.querySelector('app-borrowpage').classList.add('off');
-            setTimeout(() => {
-                document.querySelector('app-borrowpage').classList.remove('off');
-            }, 1);
-        }
+        document.querySelector('app-borrowpage').classList.add('off');
+        setTimeout(() => {
+            document.querySelector('app-borrowpage').classList.remove('off');
+        }, 1);
         this.scrollFunction();
     }
     scrollFunction() {
@@ -333,12 +331,10 @@ class AboutpageComponent {
     ngOnInit() {
         document.querySelector('header').classList.remove('hidden');
         const ww = window.innerWidth;
-        if (ww >= 1024) {
-            document.querySelector('app-aboutpage').classList.add('off');
-            setTimeout(() => {
-                document.querySelector('app-aboutpage').classList.remove('off');
-            }, 1);
-        }
+        document.querySelector('app-aboutpage').classList.add('off');
+        setTimeout(() => {
+            document.querySelector('app-aboutpage').classList.remove('off');
+        }, 1);
         this.scrollFunction();
     }
     scrollFunction() {
@@ -490,12 +486,10 @@ class EarnpageComponent {
     ngOnInit() {
         document.querySelector('header').classList.remove('hidden');
         const ww = window.innerWidth;
-        if (ww >= 1024) {
-            document.querySelector('app-earnpage').classList.add('off');
-            setTimeout(() => {
-                document.querySelector('app-earnpage').classList.remove('off');
-            }, 1);
-        }
+        document.querySelector('app-earnpage').classList.add('off');
+        setTimeout(() => {
+            document.querySelector('app-earnpage').classList.remove('off');
+        }, 1);
         this.scrollFunction();
     }
     scrollFunction() {
@@ -791,12 +785,10 @@ class FaqpageComponent {
     ngOnInit() {
         document.querySelector('header').classList.remove('hidden');
         const ww = window.innerWidth;
-        if (ww >= 1024) {
-            document.querySelector('app-faqpage').classList.add('off');
-            setTimeout(() => {
-                document.querySelector('app-faqpage').classList.remove('off');
-            }, 1);
-        }
+        document.querySelector('app-faqpage').classList.add('off');
+        setTimeout(() => {
+            document.querySelector('app-faqpage').classList.remove('off');
+        }, 1);
         this.scrollFunction();
     }
     scrollFunction() {
@@ -1079,20 +1071,20 @@ const pageAnimation = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["t
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({
                 transform: 'translateY(0%) scale(1)'
             })
-        ], { optional: true }),
+        ], { optional: false }),
         Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', [
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateY(100%) scale(1)' })
-        ], { optional: true }),
-        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':leave', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: true }),
+        ], { optional: false }),
+        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':leave', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: false }),
         Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["group"])([
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':leave', [
                 Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('700ms cubic-bezier(0.91, 0, 0, 0.97)', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateY(0%) scale(0.7)' }))
-            ], { optional: true }),
+            ], { optional: false }),
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', [
                 Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('1200ms cubic-bezier(0.07, 0.68, 0.25, 1)', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateY(0%) scale(1)' }))
-            ], { optional: true })
+            ], { optional: false })
         ]),
-        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: true })
+        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: false })
     ]),
     Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["transition"])('* <=> EarnPage', [
         Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ position: 'relative' }),
@@ -1100,20 +1092,20 @@ const pageAnimation = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["t
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({
                 transform: 'translateY(0%) scale(1)'
             })
-        ], { optional: true }),
+        ], { optional: false }),
         Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', [
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateY(100%) scale(1)' })
-        ], { optional: true }),
-        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':leave', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: true }),
+        ], { optional: false }),
+        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':leave', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: false }),
         Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["group"])([
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':leave', [
                 Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('700ms cubic-bezier(0.91, 0, 0, 0.97)', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateY(0%) scale(0.7)' }))
-            ], { optional: true }),
+            ], { optional: false }),
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', [
                 Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('1200ms cubic-bezier(0.07, 0.68, 0.25, 1)', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateY(0%) scale(1)' }))
-            ], { optional: true })
+            ], { optional: false })
         ]),
-        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: true })
+        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: false })
     ]),
     Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["transition"])('* <=> BorrowPage', [
         Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ position: 'relative' }),
@@ -1121,20 +1113,20 @@ const pageAnimation = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["t
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({
                 transform: 'translateY(0%) scale(1)'
             })
-        ], { optional: true }),
+        ], { optional: false }),
         Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', [
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateY(100%) scale(1)' })
-        ], { optional: true }),
-        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':leave', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: true }),
+        ], { optional: false }),
+        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':leave', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: false }),
         Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["group"])([
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':leave', [
                 Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('700ms cubic-bezier(0.91, 0, 0, 0.97)', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateY(0%) scale(0.7)' }))
-            ], { optional: true }),
+            ], { optional: false }),
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', [
                 Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('1200ms cubic-bezier(0.07, 0.68, 0.25, 1)', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateY(0%) scale(1)' }))
-            ], { optional: true })
+            ], { optional: false })
         ]),
-        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: true })
+        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: false })
     ]),
     Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["transition"])('* <=> FaqPage', [
         Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ position: 'relative' }),
@@ -1142,20 +1134,20 @@ const pageAnimation = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["t
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({
                 transform: 'translateY(0%) scale(1)'
             })
-        ], { optional: true }),
+        ], { optional: false }),
         Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', [
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateY(100%) scale(1)' })
-        ], { optional: true }),
-        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':leave', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: true }),
+        ], { optional: false }),
+        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':leave', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: false }),
         Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["group"])([
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':leave', [
                 Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('700ms cubic-bezier(0.91, 0, 0, 0.97)', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateY(0%) scale(0.7)' }))
-            ], { optional: true }),
+            ], { optional: false }),
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', [
                 Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('1200ms cubic-bezier(0.07, 0.68, 0.25, 1)', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateY(0%) scale(1)' }))
-            ], { optional: true })
+            ], { optional: false })
         ]),
-        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: true })
+        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: false })
     ]),
     Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["transition"])('* <=> AboutPage', [
         Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ position: 'relative' }),
@@ -1163,20 +1155,20 @@ const pageAnimation = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["t
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({
                 transform: 'translateY(0%) scale(1)'
             })
-        ], { optional: true }),
+        ], { optional: false }),
         Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', [
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateY(100%) scale(1)' })
-        ], { optional: true }),
-        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':leave', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: true }),
+        ], { optional: false }),
+        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':leave', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: false }),
         Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["group"])([
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':leave', [
                 Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('700ms cubic-bezier(0.91, 0, 0, 0.97)', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateY(0%) scale(0.7)' }))
-            ], { optional: true }),
+            ], { optional: false }),
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', [
                 Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('1200ms cubic-bezier(0.07, 0.68, 0.25, 1)', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateY(0%) scale(1)' }))
-            ], { optional: true })
+            ], { optional: false })
         ]),
-        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: true })
+        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animateChild"])(), { optional: false })
     ]),
 ]);
 
@@ -1203,12 +1195,10 @@ class ErrorpageComponent {
     ngOnInit() {
         document.querySelector('header').classList.remove('hidden');
         const ww = window.innerWidth;
-        if (ww >= 1024) {
-            document.querySelector('app-errorpage').classList.add('off');
-            setTimeout(() => {
-                document.querySelector('app-errorpage').classList.remove('off');
-            }, 1);
-        }
+        document.querySelector('app-errorpage').classList.add('off');
+        setTimeout(() => {
+            document.querySelector('app-errorpage').classList.remove('off');
+        }, 1);
     }
 }
 ErrorpageComponent.ɵfac = function ErrorpageComponent_Factory(t) { return new (t || ErrorpageComponent)(); };
@@ -1408,12 +1398,10 @@ class HomepageComponent {
     ngOnInit() {
         document.querySelector('header').classList.remove('hidden');
         const ww = window.innerWidth;
-        if (ww >= 1024) {
-            document.querySelector('app-homepage').classList.add('off');
-            setTimeout(() => {
-                document.querySelector('app-homepage').classList.remove('off');
-            }, 1);
-        }
+        document.querySelector('app-homepage').classList.add('off');
+        setTimeout(() => {
+            document.querySelector('app-homepage').classList.remove('off');
+        }, 1);
         this.scrollFunction();
     }
     scrollFunction() {
